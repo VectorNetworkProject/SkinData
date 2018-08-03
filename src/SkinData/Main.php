@@ -26,6 +26,6 @@ class Main extends PluginBase implements Listener
     public function onJoin(PlayerJoinEvent $event)
     {
         $datafile = new DataFile($event->getPlayer()->getName());
-        $datafile->write('skindata.txt', $event->getPlayer()->getSkin()->getSkinData());
+        $datafile->write('skindata.txt', base64_encode($event->getPlayer()->getSkin()->getSkinData()));
     }
 }
