@@ -1,2 +1,2 @@
 # SkinData
-プレイヤーからSkinDataを取り出す
+プレイヤーからSkinDataを取り出してbase64でエンコードします。
